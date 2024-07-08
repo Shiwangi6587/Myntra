@@ -120,36 +120,16 @@ header {
 
 
 /*------------------------ footer ------------------------ */
-.footer_container {
-    padding: 30px 0px 40px 0px;
-    background: #FAFBFC;
-    display: flex;
-    justify-content: space-evenly;
+.footer {
+   /* align-content: center; */
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
 }
 
-.footer_column {
-    display: flex;
-    flex-direction: column;
-}
 
-.footer_column h3 {
-    color: #282c3f;
-    font-size: 14px;
-    margin-bottom: 25px;
-}
 
-.footer_column a {
-    color: #696b79;
-    font-size: 15px;
-    text-decoration: none;
-    padding-bottom: 5px;
-}
 
-.copyright {
-    color: #94969f;
-    text-align: end;
-    padding: 15px;
-}
 
 /*------------------------ footer ------------------------ */
 
