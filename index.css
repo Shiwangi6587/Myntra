@@ -21,6 +21,13 @@ header {
 .action_bar {
     margin-right: 4%;
 }
+.nav_bar a.studio{
+    border-bottom: 4px solid #f54e77;
+   background-color:  #e44c7289;
+height: 20px;
+margin-top: 6px;
+}
+
 .nav_bar {
     display: flex;
     min-width: 500px;
