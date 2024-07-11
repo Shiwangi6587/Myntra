@@ -119,9 +119,41 @@
          <hr><br>
 
         <footer class="footer ">
+            
         <p>End</p>
         </footer>
 
     </main>
+
+
+        <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const categoryGrid = document.getElementById('category-grid');
+
+            try {
+                const response = await fetch('/api/pinterest-images');
+                const data = await response.json();
+                
+                data.data.forEach(pin => {
+                    const categoryItem = document.createElement('div');
+                    categoryItem.classList.add('category-item');
+
+                    const img = document.createElement('img');
+                    img.src = pin.image.original.url;
+                    img.alt = pin.note || 'Pinterest Image';
+
+                    const p = document.createElement('p');
+                    p.textContent = pin.note || 'Pinterest Image';
+
+                    categoryItem.appendChild(img);
+                    categoryItem.appendChild(p);
+
+                    categoryGrid.appendChild(categoryItem);
+                });
+            } catch (error) {
+                console.error('Error fetching Pinterest images:', error);
+            }
+        });
+    </script>
 </body>
 </html>
