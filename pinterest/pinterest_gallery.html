@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Images</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .category-sec {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+        
+        .category-item {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .category-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .category-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .category-item p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Pinterest Images</h1>
+    <section class="category-sec">
+     
+        <div class="image-container" id="image-container">
+            <!-- Images will be dynamically added here -->
+        
+     </div>
+    </section>
+
+
+    <script>
+        // JavaScript to fetch and display images from Flask endpoint
+        async function fetchPinterestImages() {
+            const response = await fetch('/get_pinterest_images');
+            const data = await response.json();
+
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = ''; // Clear previous images
+
+            data.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.image_url;
+                imgElement.alt = image.title;
+
+                const divElement = document.createElement('div');
+                divElement.classList.add('image-item');
+                divElement.appendChild(imgElement);
+
+                imageContainer.appendChild(divElement);
+            });
+        }
+
+        // Call the function to fetch images when the page loads
+        window.onload = fetchPinterestImages;
+    </script>
+</body>
+</html>
