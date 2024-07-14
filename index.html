@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="myntralogo.webp">
     <title>Myntra Functional Clone</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -43,7 +44,7 @@
     <main>
  <!-- tendy inta and printrest box section -->
 <section>
-    <h2 id="trendyheading">TRENDY</h2>
+    <h1 id="trendyheading">TRENDY</h1>
         <div class="trendy-container">
             <div class="trendy-box" id="pinterest-box">
                 <h3>Trendy on Pinterest</h3>
@@ -62,63 +63,495 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
     <!-- section complete -->
         
 
-        <!-- /*------------------------ container------------------------ */ -->
+<!-- /*------------------------ container------------------------ */ -->
 
-        <section class="category-section">
-            <h2>Latest Trend On Pinterest</h2>
+<!-----------------------------------------first 10 items----------------------->
+
+<h1>LATEST TREND ON PINTEREST</h1>
+<section class="category-section" id="carousel1">
+    <div class="carousel-container">
+        <div class="carousel-items">
             <div class="category-grid">
-              <div class="category-item">
-                <img src="img.jpg" alt="Women's Ethnic Wear">
-                <p>Women's Ethnic Wear</p>
+          
+                <div class="category-item">
+                    <img src="./images/Lehenga.jpg" alt="Ethnic Wear">
+                    <p class="colored-text">Women's Ethnic Wear</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Men's Ethnic Wear.jpg" alt="Men's Ethnic Wear">
+                    <p class="colored-text">Men's Ethnic Wear</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Men's Boots.jpg" alt="Boots for Men">
+                    <p class="colored-text">Boots for Men</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Boots for Women.jpg" alt="Boots for Women">
+                    <p class="colored-text">Boots for Women</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Outfit for Summer.png" alt="Western Dress">
+                    <p class="colored-text">Western Dress</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Trendy Coats & Jackets.jpg" alt="Coats & Jackets">
+                    <p class="colored-text">Coats & Jackets</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Beauty & Makeup.jpg" alt="Beauty & Makeup">
+                    <p class="colored-text">Beauty & Makeup</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Korean Dresses.jpg" alt="Korean Dresses">
+                    <p class="colored-text">Korean Dresses</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/WFH Casual Wear.jpg" alt="WFH Casual Wear">
+                    <p class="colored-text">WFH Casual Wear</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Saree.jpg" alt="Saree">
+                    <p class="colored-text">Saree</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Men's Active Wear.jpg" alt="Men's Active Wear">
+                    <p class="colored-text">Men's Active Wear</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Women's Active Wear.jpg" alt="Women's Active Wear">
+                    <p class="colored-text">Women's Active Wear</p>
+                </div>
+          
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>  
+        </div>
+    </div>
+</section>
+          
+          <style>
+           .colored-text {
+              color: #54504f; /* Change to your desired color */
+            }
+
+           h1 {
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            color: #54504f; 
+            letter-spacing: 5px; 
+           }
+
+          .category-section {
+            max-width: 1500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px 10px 10px 10px;
+          }
+          
+          .carousel-container {
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .carousel-items {
+            display: flex;
+            transition: transform 0.8s ease;
+          }
+          
+          .category-grid {
+            display: flex;
+          }
+          
+          .category-item {
+            background-color: #e7a4c6a3;
+            padding: 20px;
+            width: 180px;
+            margin-right: 70px;
+            border-radius: 10px;
+          }
+          
+          .category-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+          }
+          
+          .category-item p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+          
+          .carousel-dots {
+            text-align: center;
+            margin-top: 10px;
+          }
+          
+          .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          
+          .dot.active {
+            background-color: #717171;
+          }
+          </style>    
+        <!-------------------------------------------next 20 items------------------------>
+      
+<section class="category-section" id="carousel2">
+    <div class="carousel-container">
+        <div class="carousel-items">
+            <div class="category-grid">
+          
+                <div class="category-item">
+                    <img src="./images/Watches.jpg" alt="Watches for Women">
+                    <p class="colored-text">Watches for Women</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Watches for Men.jpg" alt="Watches for Men">
+                    <p class="colored-text">Watches for Men</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Lehenga choli.jpg" alt="Lehenga choli">
+                    <p class="colored-text">Lehenga choli</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Women's Hand Bag.jpg" alt="Women's Hand Bag">
+                    <p class="colored-text">Women's Hand Bag</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Classy Dress.jpg" alt="/Classy Dress">
+                    <p class="colored-text">Classy Dress</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Formal Wears.jpg" alt="Formal Wears">
+                    <p class="colored-text">Formal Wears</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Crocs.jpg" alt="Crocs">
+                    <p class="colored-text">Crocs</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Heels.jpg" alt="Heels">
+                    <p class="colored-text">Heels</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/accesories.jpg" alt="Accesories">
+                    <p class="colored-text">Accesories</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Hair  Bows.jpg" alt="Hair  Bows">
+                    <p class="colored-text">Hair  Bows</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Mini Skirts.jpg" alt="Mini Skirts">
+                    <p class="colored-text">Mini Skirts</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Trendy Tops.jpg" alt="Trendy Tops">
+                    <p class="colored-text">Trendy Tops</p>
+                </div>
+          
+            </div>
+        </div>
+          
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+        </div>
+    </div>
+</section>
+          
+          <style>
+          .category-section {
+            max-width: 1500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px 10px 10px 10px;
+          }
+          
+          .carousel-container {
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .carousel-items {
+            display: flex;
+            transition: transform 0.8s ease;
+          }
+          
+          .category-grid {
+            display: flex;
             
-              </div>
-              <div class="category-item">
-                <img src="img.jpg" alt="WFH Casual Wear">
-                <p>WFH Casual Wear</p>
-              </div>
-              <div class="category-item">
-                <img src="img.jpg" alt="WFH Casual Wear">
-                <p>WFH Casual Wear</p>
-              </div>
-              <div class="category-item">
-                <img src="img.jpg" alt="WFH Casual Wear">
-                <p>WFH Casual Wear</p>
-              </div>
+          }
+          
+          .category-item {
+            background-color: #e7a4c6a3;
+            padding: 20px;
+            width: 180px;
+            margin-right: 70px;
+            border-radius: 10px;
+            background-image: linear-gradient(
+                to bottom,
+              rgba(255, 255, 255, 0.5) 50%,
+             #a78496 50%,
+             #ea86bbb1 70%);
+          }
+          
+          .category-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+          }
+          
+          .category-item p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+          
+          .carousel-dots {
+            text-align: center;
+            margin-top: 10px;
+          }
+          
+          .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          
+          .dot.active {
+            background-color: #717171;
+          }
+          </style>
+
+<!----------------------------------------------------------next 30 items------------------------------>
+<section class="category-section" id="carousel3">
+    <div class="carousel-container">
+        <div class="carousel-items">
+            <div class="category-grid">
+          
+                <div class="category-item">
+                    <img src="./images/Hair Bands.jpg" alt="Hair Bands">
+                    <p class="colored-text">Hair Bands</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Trendy Kids Wear.jpg" alt="Trendy Kids Wear">
+                    <p class="colored-text">Trendy Kids Wear</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Eyewear.jpg" alt="Eyewear">
+                    <p class="colored-text">Eyewear</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Backpacks.jpg" alt="Backpacks">
+                    <p class="colored-text">Backpacks</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Plazos.jpg" alt="Trendy Plazo">
+                    <p class="colored-text">Trendy Plazo</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Sweatshirt.jpg" alt="Sweatshirt">
+                    <p class="colored-text">Sweatshirt</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Sherwani.jpg" alt="Sherwani">
+                    <p class="colored-text">Sherwani</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Dhoti.jpg" alt="Dhoti">
+                    <p class="colored-text">Dhoti</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Jeans.jpg" alt="Jeans">
+                    <p class="colored-text">Jeans</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Shorts.jpg" alt="Shorts">
+                    <p class="colored-text">Shorts</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Women's Jumpsuit.jpg" alt="Women's Jumpsuit">
+                    <p class="colored-text">Women's Jumpsuit</p>
+                </div>
+                <div class="category-item">
+                    <img src="./images/Men's Jumpsuit.jpg" alt="Men's Jumpsuit">
+                    <p class="colored-text">Men's Jumpsuit</p>
+                </div>
+          
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+        </div>
+    </div>
+</section>
+          
+          <style>
+          .category-section {
+            max-width: 1500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px 10px 10px 10px;
+          }
+          
+          .carousel-container {
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .carousel-items {
+            display: flex;
+            transition: transform 0.8s ease;
+          }
+          
+          .category-grid {
+            display: flex;
+          }
+          
+          .category-item {
+            background-color: #e7a4c6a3;
+            padding: 20px;
+            width: 180px;
+            margin-right: 70px;
+            border-radius: 10px;
+          }
+          
+          .category-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+          }
+          
+          .category-item p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+          }
+          
+          .carousel-dots {
+            text-align: center;
+            margin-top: 10px;
+          }
+          
+          .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          
+          .dot.active {
+            background-color: #717171;
+          }
+          </style>    
+
+ <!---------------------------------------------------------Javascript for LATEST TREND ON PINTEREST--------------------------------------------------------->         
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    function initCarousel(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const dots = carousel.querySelectorAll(".dot");
+        const items = carousel.querySelector(".carousel-items");
+        const categoryItems = carousel.querySelectorAll(".category-item");
+        const itemsPerSlide = 1; // Change as needed
+        const totalSlides = Math.ceil(categoryItems.length / itemsPerSlide);
+
+        function updateSlide(index) {
+            const offset = -index * 100; // Adjust based on percentage
+            items.style.transform = `translateX(${offset}%)`;
+
+            dots.forEach((dot) => dot.classList.remove("active"));
+            dots[index].classList.add("active");
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener("click", function() {
+                const index = dot.getAttribute("data-index");
+                updateSlide(index);
+            });
+        });
+
+        // Initialize the first slide
+        updateSlide(0);
+    }
+
+    initCarousel("carousel1");
+    initCarousel("carousel2");
+    initCarousel("carousel3");
+});
+</script>
+
+<!------------------------------------offer section--------------------------------->
+<h1>OFFERS</h1>       
+<section>
+    <div class="offer-section">
+        <div class="offer-grid">
+            <div class="offer-item">
+                <a href="https://www.myntra.com/footwear?f=Gender%3Amen%2Cmen%20women&plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                <p>30-60% OFF</p>
+                <p>It-Boy Casuals</p>
+                </a>
+            </div>
+            <div class="offer-item">
+                <a  href="https://www.myntra.com/apparel?f=Brand%3ANEXT%2CNautica%2CU.S.%20Polo%20Assn.%2CU.S.%20Polo%20Assn.%20Denim%20Co.%2CboohooMAN%3A%3ACategories%3AJeans%2CShirts%2CShorts%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20wome&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0&sort=new" >
+                <p>MIN. 60% OFF</p>
+                <p>The Everyday Finesse</p>
+                </a>
+            </div>
+            <div class="offer-item">
+                <a href="https://www.myntra.com/women-footwear?f=Brand%3ABoohoo%2CDOROTHY%20PERKINS&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                <p>MIN. 80% OFF</p>
+                <p>Outdoor-Ready Picks</p>
+                </a>
+            </div>
+            <div class="offer-item">
+                <a href="https://www.myntra.com/accessories-for-women?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-accessories-for-women&rawQuery=Accessories%20For%20Women">
+                <p>50-80% OFF</p>
+                <p>Casual Accesories</p>
+                </a>
+            </div>
 
         </div>
-             </section>
-        <hr>
-
-        <section>
-            <div class="offer-section">
-              <h2>OFFERS</h2>
-              <div class="offer-grid">
-                  <div class="offer-item">
-                    <a href="https://www.myntra.com/women-footwear?f=Brand%3ABoohoo%2CDOROTHY%20PERKINS&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
-                  <p>30-60% OFF</p>
-                  <p>It-Boy Casuals</p>
-                        </a>
-                </div>
-                <div class="offer-item">
-                    <a  href="https://www.myntra.com/apparel?f=Brand%3ANEXT%2CNautica%2CU.S.%20Polo%20Assn.%2CU.S.%20Polo%20Assn.%20Denim%20Co.%2CboohooMAN%3A%3ACategories%3AJeans%2CShirts%2CShorts%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20wome&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0&sort=new" >
-                  <p>MIN. 60% OFF</p>
-                  <p>The Everyday Finesse</p>
-                        </a>
-                </div>
-                  <div class="offer-item">
-                      <a href="https://www.myntra.com/women-footwear?f=Brand%3ABoohoo%2CDOROTHY%20PERKINS&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
-                    <p>MIN. 80% OFF</p>
-                    <p>Outdoor-Ready Picks</p>
-                          </a>
-                  </div>
-
-              </div>
-            </div>
-          </section>
+    </div>
+</section>
 
  <!-- /*------------------------ container------------------------ */ -->
 
@@ -127,7 +560,20 @@
 
         <footer class="footer ">
             
-        <p>End</p>
+        <h2 style="color: #54504f;">End</h2>
+        <h3>Team members:</h3>
+        <p>1. Name: Shiwangi</p>
+        <p>Email Id: shiwangii5734@gmail.com</p>
+        <p>2. Name: Shivani</p>
+        <p>Email Id: shivani07824@gmail.com</p>
+        <p>3. Name: Krishtina Patir</p>
+        <p>Email Id: krishtinapatir1@gmail.com</p>
+
+        <style>
+            p{
+                margin: 10px;
+            }
+        </style>
         </footer>
 
     </main>
