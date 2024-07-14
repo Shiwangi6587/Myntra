@@ -122,8 +122,11 @@ margin-top: 6px;
 
 /* trendy insta printrest section */
 #trendyheading {
-    font-size: 20px;
-    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #54504f; 
+    letter-spacing: 5px; 
 }
 
 .trendy-container {
@@ -187,53 +190,6 @@ margin-top: 6px;
 /*------------------------ latest trend ------------------------ */
 
 
-.category-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .category-grid {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-
-  }
-
-  .category-item {
-    background-color: #fff;
-    padding: 20px;
-    width: 180px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #e7a4c6a3;
-    background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.5) 50%,
-    #a78496 50%,
-    #ea86bbb1 70%
-  );
-  }
-
-.category-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .category-item p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-
 
 /*------------------------ latest trend ------------------------ */
 
@@ -241,20 +197,30 @@ margin-top: 6px;
 
 
 /*------------------------ offer of the the day------------------------ */
+h1 {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #54504f; 
+    letter-spacing: 5px; 
+   
+}
 
 .offer-section {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 40px;
-    padding: 30px;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
   }
 
   .offer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    margin-top: 30px;
+    grid-gap: 40px;
+    margin-top: 0px;
+    padding-left: 40px;
   }
 
   .offer-item {
@@ -282,7 +248,7 @@ margin-top: 6px;
 
   .offer-item p:first-child {
     font-size: 24px;
-    color: #ff69b4;
+    color: #ab1560;
   }
 
 
