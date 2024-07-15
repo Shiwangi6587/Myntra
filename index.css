@@ -136,6 +136,10 @@ margin-top: 6px;
 }
 
 .trendy-box {
+    padding: 5px;
+    margin-left: 5px ;
+    height: 400px;
+    margin-right: 5px;
     flex: 1;
     text-align: center;
     border-radius: 8px;
@@ -189,7 +193,96 @@ margin-top: 6px;
 
 /*------------------------ latest trend ------------------------ */
 
+.colored-text {
+    color: #54504f; /* Change to your desired color */
+  }
 
+ h1 {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  color: #54504f; 
+  letter-spacing: 5px; 
+ }
+
+.category-section {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.category-grid {
+  display: flex;
+}
+
+.category-item {
+  background-color: #e7a4c6a3;
+  padding: 20px;
+  width: 180px;
+  margin-right: 70px;
+  border-radius: 10px;
+}
+
+.category-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.category-item p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+} 
+
+.category-item {
+    background-color: #e7a4c6a3;
+    padding: 20px;
+    width: 180px;
+    margin-right: 70px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+      rgba(255, 255, 255, 0.5) 50%,
+     #a78496 50%,
+     #ea86bbb1 70%);
+  }
+  
 
 /*------------------------ latest trend ------------------------ */
 
